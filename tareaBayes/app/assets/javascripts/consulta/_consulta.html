@@ -1,0 +1,124 @@
+
+<div class="container">
+
+    <h2 class="center-content">Consulta</h2>
+    <form class="css-form">
+        <div class="row">
+            <!---- Columna de Datos Personales del Jugador ---->
+            <div class="col-md-4">
+                <div class="well">
+                    <div class="login-form">
+
+                        <div class="form-group">
+                            <label>¿Cómo es su economía?</label>
+                            <br>
+                            <select ng-model="con.economia" theme="bootstrap" title="Economia" required>
+                                <option>Alta</option>
+                                <option>Media</option>
+                                <option>Baja</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>¿Está cerca del mar?</label>
+                            <br>
+                            <select ng-model="con.cercania" theme="bootstrap" title="Cercania" required>
+                                <option>Si</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>¿Cuál es el continente?</label>
+                            <br>
+                            <select ng-model="con.continente" theme="bootstrap" title="Continente" required>
+                                <option>América</option>
+                                <option>Europa</option>
+                                <option>Asia</option>
+                                <option>África</option>
+                                <option>Oceanía</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Columna de Datos de Futbol ---->
+            <div class="col-md-4">
+                <div class="well">
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label>¿Cuál es el tamaño del país?</label>
+                            <br>
+                            <select ng-model="con.tam" theme="bootstrap" title="Tam" required>
+                                <option>Pequeño</option>
+                                <option>Mediano</option>
+                                <option>Grande</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>¿Cuál es su sistema social?</label>
+                            <br>
+                            <select ng-model="con.sistema" theme="bootstrap" title="Sistema" required>
+                                <option>Capitalista</option>
+                                <option>Socialista</option>
+                            </select>
+                        </div>
+
+                        <br><br>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="well">
+                    <div class="login-form">
+
+                        <div class="form-group">
+                            <label>¿Tiene Aliados?</label>
+                            <br>
+                            <select ng-model="con.aliados" theme="bootstrap" title="Aliados" required>
+                                <option>Si</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>¿Cómo es su armamento militar?</label>
+                            <br>
+                            <select ng-model="con.militar" theme="bootstrap" title="Militar" required>
+                                <option>Bajo</option>
+                                <option>Medio</option>
+                                <option>Alto</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--<p class="text-right brand-color">*Todos los campos son opcionales</label>-->
+
+        </div>
+        <div class="row">
+            <div class="well">
+                <button ng-click="Busca()" class="btn btn-primary btn-block">Consulta</button>
+            </div>
+        </div>
+    </form>
+</div><!-- /.container -->
+
+<div class="row">
+    <div class="results-area">
+        <div ng-if="results">
+            <p>Porcentaje de Declarar Guerra: {{results[0]}}</p>
+            <p>Porcentaje de Mantener Paz: {{results[1]}}</p>
+            <p>Porcentaje de Iniciar Alianza: {{results[2]}}</p>
+            <br>
+            <p ng-if="final">{{final}}</p>
+        </div>
+    </div>
+</div>
+
+
+<footer id="last"></footer>

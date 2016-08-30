@@ -1,0 +1,33 @@
+{
+  "name": "futhub_v.0.0.1",
+  "authors": [
+    "Avtelyes <avtelyes@gmail.com>"
+  ],
+  "description": "first version",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.3.0",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5",
+    "angular-ui-select": "^0.17.1",
+    "moment": "^2.13.0",
+    "ngDatepicker": "*",
+    "angular-chart.js": "^0.10.2",
+    "angular-sanitize": "^1.5.7"
+  },
+  "resolutions": {
+    "angular": "^1.0.8",
+    "ngstorage": "^0.3.10",
+    "angular-jwt": "^0.0.9"
+  }
+}
